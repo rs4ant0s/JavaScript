@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input id ="operando" onkeyup="calculadora()">
+    <input id ="operando2" onkeyup="calculadora()">
+    
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+    <p id="resultado4"></p>
+
+    <script>
+        function calculadora()
+        {
+            var i=parseInt(document.getElementById("operando").value);
+            var c=parseInt(document.getElementById("operando2").value);
+            document.getElementById("resultado").innerHTML ="soma="+(i+c);
+            document.getElementById("resultado2").innerHTML ="subtração="+(i-c);
+            document.getElementById("resultado3").innerHTML ="multiplicação="+(i*c);
+            document.getElementById("resultado4").innerHTML ="Divisão="+(i/c);
+        }
+
+    </script>
+
+</body>
+</html>

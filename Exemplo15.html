@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input id='userInput' onkeyup="userSubmit()" size=60>
+    
+    <button onclick='carregaBotao()'>Me clique vai...</button><br>
+
+
+    <div id='result'>.......</div>
+    <div id='result2'>.......</div>
+   
+
+    <script type='text/javascript'>
+        function userSubmit()
+        {
+            document.getElementById('result').innerHTML="escreveu:"+document.getElementById('userInput').value;
+            document.getElementById('result2').innerHTML="escreveu:"+document.getElementById('userInput').value;
+        } 
+        function carregaBotao()
+        {
+            document.getElementById('result').innerHTML="É natal que medo !!!";
+            document.getElementById('result2').innerHTML="É natal que medo !!!";
+        }
+          
+    </script>
+
+</body>
+</html>
+

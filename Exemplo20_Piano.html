@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <img id="i2" src="NATAL3.jpeg" style="position:absolute;width: 2000px;left: 0px;top: 0px;">
+    <head>
+    <link rel="stylesheet" href="Piano.css" type="text/css">
+    </head>
+    
+<body onkeydown="MexeOMingau(event)" onload="inicializa()" >
+    
+    <img id="i1" class="roda" src="NATAL2.jpeg" style="position:absolute;width: 700px;">
+    <h1 style="position: absolute;left:125px;color: beige;">PIANO DE RICARDO💥</h1>
+    <button onclick="diminui()"style="position:absolute;left:125px;top:150px;">REDUZ</button>
+    <button onclick="aumenta()"style="position:absolute;left:250px;top:150px">AUMENTA</button>
+    
+    <audio id="a1" controls style="width: 0Px;" preload="auto">
+    <source src="piano/040.wav">
+    </audio>
+    <audio id="a2" controls style="width: 0Px;" preload="auto">
+    <source src="piano/041.wav">
+    </audio>
+    <audio id="a3" controls style="width: 0Px;" preload="auto">
+    <source src="piano/042.wav">
+    </audio>
+    <audio id="a4" controls style="width: 0Px;" preload="auto">
+    <source src="piano/043.wav">
+    </audio>
+    <audio id="a5" controls style="width: 0Px;" preload="auto">
+    <source src="piano/044.wav">
+    </audio>
+    <audio id="a6" controls style="width: 0Px;" preload="auto">
+    <source src="piano/045.wav">
+    </audio>
+    <audio id="a7" controls style="width: 0Px;" preload="auto">
+    <source src="piano/046.wav">
+    </audio>
+    <audio id="a8" controls style="width: 0Px;" preload="auto">
+    <source src="piano/047.wav">
+    </audio>
+    <audio id="a9" controls style="width: 0Px;" preload="auto">
+    <source src="piano/048.wav">
+    </audio>
+    <audio id="a10" controls style="width: 0Px;" preload="auto">
+    <source src="piano/050.wav">
+    </audio>
+    <audio id="a11" controls style="width: 0Px;" preload="auto">
+    <source src="piano/051.wav">
+    </audio>
+    <audio id="a12" controls style="width: 0Px;" preload="auto">
+    <source src="piano/052.wav">
+    </audio>
+    <audio id="a13" controls style="width: 0Px;" preload="auto">
+    <source src="piano/053.wav">
+    </audio>
+    <audio id="a14" controls style="width: 0Px;" preload="auto">
+    <source src="piano/054.wav">
+    </audio>
+    <audio id="a15" controls style="width: 0Px;" preload="auto">
+    <source src="piano/055.wav">
+    </audio>
+    <audio id="a16" controls style="width: 0Px;" preload="auto">
+    <source src="piano/056.wav">
+    </audio>
+    <audio id="a17" controls style="width: 0Px;" preload="auto">
+    <source src="piano/bat1.mp3">
+    </audio>
+    <audio id="a18" controls style="width: 0Px;" preload="auto">
+    <source src="piano/rockguitar.mp3">
+    </audio>
+    <audio id="a19" controls style="width: 0Px;" preload="auto">
+    <source src="piano/jingle_bells.mp3">
+    </audio>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br>
+    <iframe  style="position: absolute;left:125px;top:550;"
+    width="500" height="500" src="https://www.youtube.com/embed/vq1l1N_MN3k" 
+    title="MÚSICA DE NATAL PARA TOCAR NO TECLADO OU NO PIANO💥 JINGLE BELLS para INICIANTES 💥 Simples e Fácil 💥"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+    <button onclick="donota()" style="position:absolute;left:125px;top:250px;width:50px;height:180px;background-color:white">do</button>
+    <button onclick="renota()" style="position:absolute;left:175px;top:250px;width:50px;height:180px;background-color:white">re</button>
+    <button onclick="minota()" style="position:absolute;left:160px;top:250px;width:30px;height:100px;background-color:black;color: white;">mi</button>
+    <button onclick="fanota()" style="position:absolute;left:225px;top:250px;width:50px;height:180px;background-color:white">fa</button>
+    <button onclick="solnota()" style="position:absolute;left:275px;top:250px;width:50px;height:180px;background-color:white">sol</button>
+    <button onclick="lanota()" style="position:absolute;left:260px;top:250px;width:30px;height:100px;background-color:black;color: white;">la</button>
+    <button onclick="sinota()" style="position:absolute;left:325px;top:250px;width:50px;height:180px;background-color:white">si</button>
+    <button onclick="Anota()" style="position:absolute;left:375px;top:250px;width:50px;height:180px;background-color:white">1</button>    
+    <button onclick="Bnota()" style="position:absolute;left:360px;top:250px;width:30px;height:100px;background-color:black;color: white;">2</button>
+    <button onclick="Cnota()" style="position:absolute;left:425px;top:250px;width:50px;height:180px;background-color:white">3</button>
+    <button onclick="Dnota()" style="position:absolute;left:475px;top:250px;width:50px;height:180px;background-color:white">4</button>
+    <button onclick="Enota()" style="position:absolute;left:460px;top:250px;width:30px;height:100px;background-color:black;color: white;">5</button>
+    <button onclick="Fnota()" style="position:absolute;left:525px;top:250px;width:50px;height:180px;background-color:white">6</button>
+    <button onclick="Gnota()" style="position:absolute;left:575px;top:250px;width:50px;height:180px;background-color:white">7</button>
+    <button onclick="Hnota()" style="position:absolute;left:560px;top:250px;width:30px;height:100px;background-color:black;color: white;">8</button>
+    <button onclick="Inota()" style="position:absolute;left:625px;top:250px;width:50px;height:180px;background-color:white">9</button>
+    <button onclick="Batidanota()" style="position:absolute;left:725px;top:250px;width:100px;height:100px;">Bateria</button>
+    <button onclick="Guitarranota()" style="position:absolute;left:825px;top:250px;width:100px;height:100px;">Guitarra</button>
+    <button onclick="Jingle()" style="position:absolute;left:725px;top:350px;width:100px;height:100px;">Jingle</button>
+    <button onclick="stop()" style="position:absolute;left:825px;top:350px;width:100px;height:100px;">Stop</button>
+
+    <script>
+
+    var x=0;
+    var y=0;
+    var largura=100
+    var aumento=1;
+    var aumentoy=1;
+
+    function inicializa()
+    {
+        setInterval(function(){actualiza()},10);
+    }
+    function actualiza()
+    {
+        x=x+aumento;
+        document.getElementById("i1").style.left=x+"px";
+        y=y+aumentoy;
+        document.getElementById("i1").style.top=y+"px";
+
+        if (x>window.innerWidth-document.getElementById("i1").width)
+        aumento=-10;
+        if (y>window.innerHeight-document.getElementById("i1").height)
+        aumentoy=-10;
+        if (x<=0)
+        aumento=+10;
+        if (y<=0)
+        aumentoy=+10;
+        }
+
+        function diminui()
+        {
+            largura=largura-10;
+            document.getElementById("i1").style.width=largura+"px";
+        }
+        
+        function aumenta()
+        {
+            largura=largura+10;
+            document.getElementById("i1").style.width=largura+"px";
+        }
+
+        function donota()
+        {
+            document.getElementById('a1').pause();
+            document.getElementById('a1').currentTime=0;
+            document.getElementById('a1').play();
+        }
+        
+        function renota()
+        {
+            document.getElementById('a2').pause();
+            document.getElementById('a2').currentTime=0;
+            document.getElementById('a2').play();
+        }
+        
+        function minota()
+        {
+            document.getElementById('a3').pause();
+            document.getElementById('a3').currentTime=0;
+            document.getElementById('a3').play();
+        }
+        
+        function fanota()
+        {
+            document.getElementById('a4').pause();
+            document.getElementById('a4').currentTime=0;
+            document.getElementById('a4').play();
+        }
+        
+        function solnota()
+        {
+            document.getElementById('a5').pause();
+            document.getElementById('a5').currentTime=0;
+            document.getElementById('a5').play();
+        }
+         
+        function lanota()
+        {
+            document.getElementById('a6').pause();
+            document.getElementById('a6').currentTime=0;
+            document.getElementById('a6').play();
+        }
+         
+        function sinota()
+        {
+            document.getElementById('a7').pause();
+            document.getElementById('a7').currentTime=0;
+            document.getElementById('a7').play();
+        }
+         
+        function Anota()
+        {
+            document.getElementById('a8').pause();
+            document.getElementById('a8').currentTime=0;
+            document.getElementById('a8').play();
+        }
+         
+        function Bnota()
+        {
+            document.getElementById('a9').pause();
+            document.getElementById('a9').currentTime=0;
+            document.getElementById('a9').play();
+        }
+         
+        function Cnota()
+        {
+            document.getElementById('a10').pause();
+            document.getElementById('a10').currentTime=0;
+            document.getElementById('a10').play();
+        }
+         
+        function Dnota()
+        {
+            document.getElementById('a11').pause();
+            document.getElementById('a11').currentTime=0;
+            document.getElementById('a11').play();
+        }
+         
+        function Enota()
+        {
+            document.getElementById('a12').pause();
+            document.getElementById('a12').currentTime=0;
+            document.getElementById('a12').play();
+        }
+         
+        function Fnota()
+        {
+            document.getElementById('a13').pause();
+            document.getElementById('a13').currentTime=0;
+            document.getElementById('a13').play();
+        }
+         
+        function Gnota()
+        {
+            document.getElementById('a14').pause();
+            document.getElementById('a14').currentTime=0;
+            document.getElementById('a14').play();
+        }
+         
+        function Hnota()
+        {
+            document.getElementById('a15').pause();
+            document.getElementById('a15').currentTime=0;
+            document.getElementById('a15').play();
+        }
+         
+        function Inota()
+        {
+            document.getElementById('a16').pause();
+            document.getElementById('a16').currentTime=0;
+            document.getElementById('a16').play();
+        }
+        
+        function Batidanota()
+        {
+            document.getElementById('a17').pause();
+            document.getElementById('a17').currentTime=0;
+            document.getElementById('a17').play();
+        }
+        
+        function Guitarranota()
+        {
+            document.getElementById('a18').pause();
+            document.getElementById('a18').currentTime=0;
+            document.getElementById('a18').play();
+        }
+        
+        function stop()
+        {
+            document.getElementById('a18').pause();
+            document.getElementById('a17').pause();
+            document.getElementById('a19').pause();
+        }
+        
+        function Jingle()
+        {
+            document.getElementById('a19').pause();
+            document.getElementById('a19').currentTime=0;
+            document.getElementById('a19').play();
+        }
+
+        function MexeOMingau(event)
+        {
+            var key = event.keyCode;
+            if (key==49) //tecla do 1
+                donota();
+            if (key==50) //tecla do 2
+                renota();
+            if (key==51) //tecla do 3
+                minota();
+            if (key==52) //tecla do 4
+                fanota();
+            if (key==53) //tecla do 5
+                solnota();
+            if (key==54) //tecla do 6
+                lanota();
+            if (key==55) //tecla do 7
+                sinota();
+            if (key==56) //tecla do 8
+                Anota();
+            if (key==57) //tecla do 9
+                Bnota();
+            if (key==48) //tecla do 0
+                Cnota();
+            if (key==81) //tecla do q
+                Dnota();
+            if (key==87) //tecla do w
+                Enota();
+            if (key==69) //tecla do e
+                Fnota();
+            if (key==82) //tecla do r
+                Gnota();
+            if (key==84) //tecla do t
+                Hnota();
+            if (key==89) //tecla do t
+                Inota();
+        }
+    </script>  
+
+</body>
+</html>
+
+
+

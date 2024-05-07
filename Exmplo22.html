@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="stylepopo.css" type="text/css">
+    </head>
+    <body onload="inicializa()">
+        <br>
+        <button onclick="diminui()">+pequeno</button>
+        <button onclick="aumenta()">+grande</button>
+        <img id="i1" class="roda" src="1.jpg" style="position:absolute;width: 100px;">
+        <script>
+            var x=0;
+            var y=0;
+            var largura=100
+            var aumento=1;
+            var aumentoy=1;
+            function inicializa()
+            {
+                setInterval(function(){actualiza()},10);
+            }
+            function actualiza()
+            {
+                x=x+aumento;
+                document.getElementById("i1").style.left=x+"px";
+                y=y+aumentoy;
+                document.getElementById("i1").style.top=y+"px";
+
+                if (x>window.innerWidth-document.getElementById("i1").width)
+                aumento=-10;
+                if (y>window.innerHeight-document.getElementById("i1").height)
+                aumentoy=-10;
+                if (x<=0)
+                aumento=+10;
+                if (y<=0)
+                aumentoy=+10;
+            }
+            function diminui()
+            {
+                largura=largura-10;
+                document.getElementById("i1").style.width=largura+"px";
+            }
+            function aumenta()
+            {
+                largura=largura+10;
+                document.getElementById("i1").style.width=largura+"px";
+            }
+       
+        </script>
+    </body>
+</html>

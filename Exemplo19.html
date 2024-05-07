@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input id ="userInput" size=60  onkeyup="userSubmit(event)"> <button onclick="userSubmit()">Submit</button>  
+    <div id="result"></div>
+    
+    <script>
+    
+        function userSubmit()
+        {
+            var UI=document.getElementById("userInput").value;
+            var resposta;
+            if(UI=="ola") resposta= "Olá estas bom ?";
+            else if (UI=="sim") resposta="ainda bem";
+            else if (UI=="estás bom?") resposta="mete-te na tua vida";
+            else if (UI=="qual a tua idade?") resposta="18 anois";
+            else if (UI=="mentiroso") resposta="ah pois é";
+            else if (UI=="Qual é o contrário de domingo? ") resposta="Donada";
+            else if (UI=="Como se chama um boomerang que não volta? ") resposta="Um pau";
+            else if (UI=="Por que o livro de matemática ficou de castigo? ") resposta="Porque ele tinha muitos problemas.";
+            else resposta="";
+            document.getElementById("result").innerHTML=resposta;
+        }
+
+    </script>
+
+</body>
+</html>

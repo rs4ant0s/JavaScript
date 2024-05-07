@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input id ="index" onkeyup="ProcurarLivro()">  
+    <p id="livro"></p>
+    
+    <script>
+        var livros = ["Rocky IV","Força em Alerta","Rambo","Codigo da Vinci"];
+        function ProcurarLivro()
+        {
+            var index=parseInt(document.getElementById("index").value);
+            var texto="";
+            var i=0;
+            for (i=0;i<3;i++)
+            {
+                texto=texto+livros[i]+";";
+            }
+        texto=texto+" o escolhido:"+livros[index-1];
+        document.getElementById("livro").innerHTML=texto;
+        }
+
+    </script>
+
+</body>
+</html>
